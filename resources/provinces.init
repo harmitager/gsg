@@ -1,0 +1,40 @@
+[{
+  "name": "Alfa",
+  "population": 50,
+  "income":70,
+  "id": 1,
+  "militancy": 0,
+  "populationLimit":100
+},
+  {
+    "name": "Bravo",
+    "population": 51,
+    "income":71,
+    "id": 2,
+    "militancy": 0,
+    "populationLimit":100
+  },
+  {
+    "name": "Charlie",
+    "population": 51,
+    "income":71,
+    "id": 3,
+    "militancy": 0,
+    "populationLimit":100
+  },
+  {
+    "name": "Delta",
+    "population": 51,
+    "income":71,
+    "id": 4,
+    "militancy": 0,
+    "populationLimit":100
+  },
+  {
+    "name": "Echo",
+    "population": 51,
+    "income":71,
+    "id": 5,
+    "militancy": 0,
+    "populationLimit":100
+  }]

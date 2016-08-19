@@ -3,12 +3,13 @@ package province
 import country.Country
 import culture.Culture
 import faith.Faith
+import world.World
 import kotlin.properties.Delegates
 import kotlin.properties.ObservableProperty
 
 /**
  * Created by harmitage on 16.08.2016.
- */
+  */
 class Province(val name: String, var population: Int,_income:Int, val id: Int, _owner: Country?, _controller: Country?, var faith: Faith?, var culture: Culture?, var militancy: Int,var populationLimit:Int) {
 
     var populationChange by Delegates.observable(0, {
@@ -46,4 +47,6 @@ class Province(val name: String, var population: Int,_income:Int, val id: Int, _
         if (this.owner==new)
             new?.income = new?.income?.plus(this.income)!!
     })
+
+
 }
