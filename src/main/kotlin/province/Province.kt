@@ -1,5 +1,7 @@
 package province
 
+import com.fasterxml.jackson.annotation.JsonIgnore
+import com.fasterxml.jackson.annotation.JsonManagedReference
 import country.Country
 import culture.Culture
 import faith.Faith

@@ -14,6 +14,80 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/build/classes" />
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/../../calculator/calculator" value="1465292946000" />
+        <entry key="$PROJECT_DIR$/../../example" value="1459501974000" />
+        <entry key="$PROJECT_DIR$/../../example/example" value="1456672156000" />
+        <entry key="$PROJECT_DIR$/../../forcomp" value="1462298812000" />
+        <entry key="$PROJECT_DIR$/../../funsets" value="1462301840000" />
+        <entry key="$PROJECT_DIR$/../../funsets/funsets" value="1462301840000" />
+        <entry key="$PROJECT_DIR$/../../objsets" value="1462304846000" />
+        <entry key="$PROJECT_DIR$/../../objsets/objsets" value="1462304846000" />
+        <entry key="$PROJECT_DIR$/../../parprog-snippets-master" value="1466981764000" />
+        <entry key="$PROJECT_DIR$/../../patmat" value="1462362064000" />
+        <entry key="$PROJECT_DIR$/../../quickcheck/quickcheck" value="1464270170000" />
+        <entry key="$PROJECT_DIR$/../../recfun" value="1462354730000" />
+        <entry key="$PROJECT_DIR$/../../scalashop" value="1465217894000" />
+        <entry key="$PROJECT_DIR$/../../streams" value="1464269052000" />
+        <entry key="$USER_HOME$/IdeaProjects/Hello World" value="1465367872530" />
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

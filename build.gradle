@@ -1,28 +1,35 @@
-group 'gsg'
-version '1.0-SNAPSHOT'
-
 buildscript {
-    ext.kotlin_version = '1.0.3'
-
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
+	ext {
+		kotlinVersion = '1.0.3'
+		springBootVersion = '1.4.0.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
+	}
 }
 
 apply plugin: 'kotlin'
+apply plugin: 'spring-boot'
 
-sourceSets {
-    main.kotlin.srcDirs += 'src/main/kotlin'
+jar {
+	baseName = 'gsg'
+	version = '0.0.1-SNAPSHOT'
 }
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
-    mavenCentral()
+	mavenCentral()
 }
 
+
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile "com.fasterxml.jackson.module:jackson-module-kotlin:2.7.5"
+	compile('org.springframework.boot:spring-boot-starter-amqp')
+	compile("org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}")
+	compile "com.fasterxml.jackson.module:jackson-module-kotlin:2.7.5"
+	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
