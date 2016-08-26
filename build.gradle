@@ -1,35 +1,39 @@
 buildscript {
-	ext {
-		kotlinVersion = '1.0.3'
-		springBootVersion = '1.4.0.RELEASE'
-	}
-	repositories {
-		mavenCentral()
-	}
-	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-		classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
-	}
+    ext {
+        kotlinVersion = '1.0.3'
+        springBootVersion = '1.4.0.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
+    }
 }
 
 apply plugin: 'kotlin'
 apply plugin: 'spring-boot'
 
 jar {
-	baseName = 'gsg'
-	version = '0.0.1-SNAPSHOT'
+    baseName = 'gsg'
+    version = '0.0.1-SNAPSHOT'
 }
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 repositories {
-	mavenCentral()
+    mavenCentral()
+    jcenter()
 }
 
-
+def jme3 = [v: '3.1.0-beta1', g: 'org.jmonkeyengine']
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-amqp')
-	compile("org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}")
-	compile "com.fasterxml.jackson.module:jackson-module-kotlin:2.7.5"
-	testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile('org.springframework.boot:spring-boot-starter-amqp')
+    compile("org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}")
+    compile "com.fasterxml.jackson.module:jackson-module-kotlin:2.7.5"
+    compile "${jme3.g}:jme3-core:${jme3.v}"
+    runtime "${jme3.g}:jme3-desktop:${jme3.v}"
+    runtime "${jme3.g}:jme3-lwjgl:${jme3.v}"
+    testCompile('org.springframework.boot:spring-boot-starter-test')
 }
