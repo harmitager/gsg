@@ -19,7 +19,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="GSG_main" target="1.8" />
       <module name="gsg_main" target="1.8" />
+      <module name="GSG_test" target="1.8" />
       <module name="gsg_test" target="1.8" />
       <module name="gsgback_main" target="1.8" />
       <module name="gsgback_test" target="1.8" />
