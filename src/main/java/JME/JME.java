@@ -34,6 +34,7 @@ public class JME extends SimpleApplication {
         Node map = (Node) assetManager.loadModel("Models/map.obj");
         Material mat_brick = new Material(assetManager, "Common/MatDefs/Light/Lighting.j3md");
         mat_brick.setTexture("DiffuseMap", assetManager.loadTexture("Textures/123.jpg"));
+        mat_brick.setTexture("NormalMap", assetManager.loadTexture("Textures/earth_normalmap.jpg"));
         map.setMaterial(mat_brick);
         map.scale(5f, 5f, 5f);
         map.setLocalTranslation(2.0f,-2.5f,0.0f);
