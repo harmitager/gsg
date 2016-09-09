@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jmonkeyengine:jme3-plugins:3.1.0-beta1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jmonkeyengine/jme3-plugins/3.1.0-beta1/7db22fcbe54204c964d312717e6d0dc41357e28e/jme3-plugins-3.1.0-beta1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jmonkeyengine/jme3-plugins/3.1.0-beta1/f61f13d7d1bbce78d3fa5a80dc5307f3580a3fdd/jme3-plugins-3.1.0-beta1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jmonkeyengine:jme3-blender:3.1.0-beta1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jmonkeyengine/jme3-blender/3.1.0-beta1/1aea9aa0a90328f867061ec2983c83e615bc3b6/jme3-blender-3.1.0-beta1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jmonkeyengine/jme3-blender/3.1.0-beta1/128c70e47d95567f48ec35aee027e9df377e6745/jme3-blender-3.1.0-beta1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

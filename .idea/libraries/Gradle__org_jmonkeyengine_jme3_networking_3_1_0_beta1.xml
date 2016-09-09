@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jmonkeyengine:jme3-networking:3.1.0-beta1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jmonkeyengine/jme3-networking/3.1.0-beta1/4d81c623fb3347d5ccb3be080c3f1245f1fd51d7/jme3-networking-3.1.0-beta1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jmonkeyengine/jme3-networking/3.1.0-beta1/be5891a73befcca578bce69e43873114c3670054/jme3-networking-3.1.0-beta1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
