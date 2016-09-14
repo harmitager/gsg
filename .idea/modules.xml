@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/gsg.iml" filepath="$PROJECT_DIR$/.idea/modules/gsg.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/gsg_main.iml" filepath="$PROJECT_DIR$/.idea/modules/gsg_main.iml" group="gsg" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/gsg_main.iml" filepath="$PROJECT_DIR$/.idea/modules/gsg_main.iml" group="gsg" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gsg_main.iml" filepath="$PROJECT_DIR$/.idea/modules/gsg_main.iml" group="gsg" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gsg_test.iml" filepath="$PROJECT_DIR$/.idea/modules/gsg_test.iml" group="gsg" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/gsg_test.iml" filepath="$PROJECT_DIR$/.idea/modules/gsg_test.iml" group="gsg" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/gsg_test.iml" filepath="$PROJECT_DIR$/.idea/modules/gsg_test.iml" group="gsg" />
     </modules>

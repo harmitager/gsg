@@ -13,6 +13,7 @@ class Country(var name: String, val id: Int) {
     var isAtWar = false
     var income = 0
     var money = 0
+    var color = "0f,0f,0f,0f"
 
     init {
         for (province in provinces!!)
