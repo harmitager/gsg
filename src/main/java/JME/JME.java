@@ -21,7 +21,7 @@ import java.util.Map;
 
 public class JME extends SimpleApplication {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         JME app = new JME();
 
         app.showSettings = false;
@@ -46,44 +46,20 @@ public class JME extends SimpleApplication {
     public void initMap() {
         Node map = (Node) assetManager.loadModel("Models/map.obj");
         map.scale(5f, 5f, 5f);
-        map.setLocalTranslation(2.0f,-2.5f,0.0f);
+        map.setLocalTranslation(2.0f, -2.5f, 0.0f);
         map.rotate(-3.0f, -90.0f, 0.0f);
 
-        ObjectMapper JSON = Reader.INSTANCE.getJSON();
+        System.out.println(World.INSTANCE.send());
 
-        Country[] country = new Country[0];
-        try {
-            country = JSON.readValue(new File("resources/countries.init"), Country[].class);
-        } catch (IOException e) {
-            System.out.println(e);
-        }
-
-        System.out.println(country[1].getColor());
-
-
-        Map<String, Integer> ownership = null;
-        try {
-            ownership = JSON.readValue(new File("resources/ownership.init"), World[].class);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        for (Map.Entry<String, String> entry : map.entrySet())
-        {
-            System.out.println(entry.getKey() + "/" + entry.getValue());
-        }
-
-        System.out.println(ownership);
-
-        /* for (int i = 0; i < ownership.length; i++) {
-
-
+        int i = 0;
+        for (Country country : World.INSTANCE.getCountries()) {
             Spatial current_province = ((Node) map).getChild(i);
             Material politMat = new Material(assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
             //Material politMat = new Material(assetManager, "Common/MatDefs/Light/Lighting.j3md");
-            politMat.setColor("Color", new ColorRGBA();
+            politMat.setColor("Color", new ColorRGBA());
             current_province.setMaterial(politMat);
-        }*/
+        }
 
         rootNode.attachChild(map);
-        }
+    }
 }
