@@ -4,7 +4,8 @@
   "income":70,
   "id": 1,
   "militancy": 0,
-  "populationLimit":100
+  "populationLimit":100,
+  "attractiveness":1
 },
   {
     "name": "Bravo",
@@ -12,7 +13,8 @@
     "income":71,
     "id": 2,
     "militancy": 0,
-    "populationLimit":100
+    "populationLimit":100,
+    "attractiveness":2
   },
   {
     "name": "Charlie",
@@ -20,7 +22,8 @@
     "income":71,
     "id": 3,
     "militancy": 0,
-    "populationLimit":100
+    "populationLimit":100,
+    "attractiveness":3
   },
   {
     "name": "Delta",
@@ -28,7 +31,8 @@
     "income":71,
     "id": 4,
     "militancy": 0,
-    "populationLimit":100
+    "populationLimit":100,
+    "attractiveness":4
   },
   {
     "name": "Echo",
@@ -36,5 +40,6 @@
     "income":71,
     "id": 5,
     "militancy": 0,
-    "populationLimit":100
+    "populationLimit":100,
+    "attractiveness":5
   }]

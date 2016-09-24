@@ -2,6 +2,8 @@ package world
 
 import com.fasterxml.jackson.annotation.JsonBackReference
 import com.fasterxml.jackson.annotation.JsonIgnore
+import com.fasterxml.jackson.databind.JsonNode
+import com.fasterxml.jackson.databind.node.ArrayNode
 import com.fasterxml.jackson.module.kotlin.readValue
 import country.Country
 import input.Input
@@ -27,10 +29,17 @@ object World {
             countriesByID.put(country.id, country)
         var ownership: MutableMap<String, Int> = Reader.JSON.readValue(File("resources/ownership.init"))
         var control: MutableMap<String, Int> = Reader.JSON.readValue(File("resources/control.init"))
+        var neighbourhood: MutableMap<String, ArrayNode> = Reader.JSON.readValue(File("resources/neighbourhood.init"))
         for (x in control.keys)
             provincesByID[x.toInt()]?.controller = countriesByID[ownership[x]]
         for (x in ownership.keys)
             provincesByID[x.toInt()]?.owner = countriesByID[ownership[x]]
+        for (x in neighbourhood) {
+            for (y in x.value) {
+                provincesByID[x.key.toInt()]?.neighbours!!.add(provincesByID[y.asInt()]!!)
+            }
+        }
+        print(provincesByID)
     }
 
     fun next(input: Input?) {
